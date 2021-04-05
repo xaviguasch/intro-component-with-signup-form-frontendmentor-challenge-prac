@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom properties */
+
+:root {
+  --ff-poppins: 'Poppins', sans-serif;
+
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+
+  --fs-10: 0.625rem;
+  --fs-12: 0.75rem;
+  --fs-14: 0.875rem;
+  --fs-16: 1rem;
+  --fs-18: 1.125rem;
+  --fs-20: 1.25rem;
+  --fs-24: 1.5rem;
+  --fs-28: 1.75rem;
+  --fs-32: 2rem;
+  --fs-36: 2.25rem;
+  --fs-40: 2.5rem;
+  --fs-64: 4rem;
+
+  --clr-red: hsl(0, 100%, 74%);
+  --clr-green: hsl(154, 59%, 51%);
+  --clr-blue: hsl(248, 32%, 49%);
+  --clr-white: hsl(360, 100%, 100%);
+  --clr-dark-blue: hsl(249, 10%, 26%);
+  --clr-black: hsl(0, 0%, 0%);
+  --clr-grayish-blue: hsl(246, 25%, 77%);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--ff-poppins);
+  margin: 0;
+  font-size: var(--fs-16);
+  font-weight: var(--fw-regular);
+  line-height: 1.6;
+  color: var(--clr-white);
+  text-align: center;
+  background-color: var(--clr-red);
+  background-image: url('./images/bg-intro-mobile.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+/* img {
+  max-width: 100%;
+} */
+
+/* Typography */
+.title {
+  font-size: var(--fs-24);
+  font-weight: var(--fw-semi-bold);
+}
+.copy-text {
+}
+
+.free-trial-text {
+  font-weight: var(--fw-light);
+}
+.free-trial-span {
+  font-weight: var(--fw-semi-bold);
+}
+
+input {
+  font-family: var(--ff-poppins);
+  font-weight: var(--fw-medium);
+  color: var(--clr-black);
+}
+
+input::placeholder {
+  font-family: var(--ff-poppins);
+  font-weight: var(--fw-medium);
+  color: var(--clr-dark-blue);
+}
+
+.error-form-message {
+  color: var(--clr-red);
+  font-style: italic;
+  font-size: var(--fs-10);
+}
+
+.free-trial-btn {
+  font-size: var(--fs-14);
+  color: var(--clr-white);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.terms-and-services {
+  font-size: var(--fs-10);
+  color: var(--clr-grayish-blue);
+}
+
+.terms-and-services a {
+  text-decoration: none;
+  font-weight: var(--fw-semi-bold);
+  color: var(--clr-red);
+}
+
+/* Utility styles */
+
+.container {
+  height: 100%;
+  margin: 0 auto;
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main {
+  padding: 0 1.5em;
+  margin: 5em auto 4em;
+  position: relative;
+}
+
+/* SECTIONS */
+.copy-area {
+}
+
+.title {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.copy-text {
+  margin-top: 2em;
+}
+
+.card-area {
+  margin-top: 4em;
+}
+
+.free-trial {
+  background-color: var(--clr-blue);
+  padding: 1em 3em;
+  border-radius: 0.5em;
+  box-shadow: 1px 7px 0px hsla(0, 1%, 30%, 0.3);
+}
+
+.card {
+  margin-top: 1.5em;
+  padding: 1.5em 1.25em;
+  background-color: var(--clr-white);
+  border-radius: 0.5em;
+  box-shadow: 1px 7px 0px hsla(0, 1%, 30%, 0.3);
+}
+
+.form-control {
+  margin-bottom: 1em;
+}
+
+.form-control input {
+  width: 100%;
+  border: 1px solid var(--clr-grayish-blue);
+  border-radius: 0.3em;
+  padding: 1em 1.2em;
+}
+
+.error-form-message {
+  display: none;
+}
+
+.free-trial-btn {
+  width: 100%;
+  border: none;
+  background-color: var(--clr-green);
+  padding: 1.5em 2em;
+  border-radius: 0.5em;
+  box-shadow: 1px 4px 0px hsla(150, 86%, 30%, 0.7);
+}
+
+.terms-and-services {
+  display: block;
+  margin-top: 1.5em;
+  padding: 0 3em;
+  line-height: 2;
+}
+
+/* Footer */
+
+.footer {
+  padding: 0.75em 0;
+  color: var(--clr-dark-blue);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
