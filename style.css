@@ -171,6 +171,8 @@ input::placeholder {
 }
 
 .form-control {
+  position: relative;
+  padding-bottom: 0.5em;
   margin-bottom: 1em;
 }
 
@@ -181,8 +183,31 @@ input::placeholder {
   padding: 1em 1.2em;
 }
 
+.error.form-control input {
+  border: 2px solid var(--clr-red);
+  color: var(--clr-red);
+}
+
 .error-form-message {
   display: none;
+}
+
+.error > .error-form-message {
+  display: block;
+  position: absolute;
+  bottom: -8px;
+  right: 6px;
+}
+
+.icon-error {
+  display: none;
+}
+
+.error > .icon-error {
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 20px;
 }
 
 .free-trial-btn {
@@ -192,12 +217,17 @@ input::placeholder {
   padding: 1.5em 2em;
   border-radius: 0.5em;
   box-shadow: 1px 4px 0px hsla(150, 86%, 30%, 0.7);
+  outline: none;
 }
 
 .free-trial-btn:hover,
 .free-trial-btn:active {
   cursor: pointer;
   background-color: var(--clr-green-brighter);
+}
+
+.free-trial-btn:active {
+  box-shadow: 1px 4px 10px hsla(150, 86%, 30%, 0.7);
 }
 
 .terms-and-services {
