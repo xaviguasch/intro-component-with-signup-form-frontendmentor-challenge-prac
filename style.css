@@ -183,31 +183,31 @@ input::placeholder {
   padding: 1em 1.2em;
 }
 
-.error.form-control input {
+.error.form-control > input {
   border: 2px solid var(--clr-red);
   color: var(--clr-red);
 }
 
 .error-form-message {
-  display: none;
-}
-
-.error > .error-form-message {
-  display: block;
+  opacity: 0;
   position: absolute;
   bottom: -8px;
   right: 6px;
 }
 
-.icon-error {
-  display: none;
+.error.form-control > .error-form-message {
+  opacity: 1;
 }
 
-.error > .icon-error {
-  display: block;
+.icon-error {
+  opacity: 0;
   position: absolute;
   top: 12px;
   right: 20px;
+}
+
+.error.form-control > .icon-error {
+  opacity: 1;
 }
 
 .free-trial-btn {
