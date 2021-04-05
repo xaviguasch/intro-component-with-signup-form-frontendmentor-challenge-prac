@@ -223,7 +223,7 @@ input::placeholder {
 }
 
 /* MEDIA QUERIES */
-@media (min-width: 950px) {
+@media (min-width: 800px) {
   body {
     background-image: url('./images/bg-intro-desktop.png');
     background-position: center top;
@@ -255,6 +255,7 @@ input::placeholder {
   }
 
   .title {
+    width: 90%;
     margin: 0;
     font-size: var(--fs-40);
     font-weight: var(--fw-bold);
